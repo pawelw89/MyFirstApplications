@@ -1,6 +1,4 @@
-package Lesson7;
-
-import Lesson7.MobilePhone;
+package Lesson7Hometask;
 
 public class MobilePhoneTester {
 

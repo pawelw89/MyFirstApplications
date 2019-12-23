@@ -1,4 +1,4 @@
-package Lesson7;
+package Lesson7Hometask;
 
 import javax.swing.*;
 
@@ -34,7 +34,6 @@ public class MobilePhone {
         currentBatteryCapacity = batteryCapacity;
         System.out.println("Phone charged");
         }
-
 
     void installApp(String appName, int m) {
         if ((memory - m) > 0) {

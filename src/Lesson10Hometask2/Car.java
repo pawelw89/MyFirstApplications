@@ -10,6 +10,11 @@ public class Car {
         this.engine = engine;
     }
 
+    @Override
+    public String toString() {
+        return name + " " + engine;
+    }
+
     public String getName() {
         return name;
     }

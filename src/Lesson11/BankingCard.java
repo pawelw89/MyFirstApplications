@@ -3,11 +3,11 @@ package Lesson11;
 public class BankingCard {
     private int cardNumber;
     private Person owner;
-    private byte pin;
+    private String pin;
     private int accountNumber;
     private String bankName;
 
-    public BankingCard(int cardNumber, Person owner, byte pin, int accountNumber, String bankName) {
+    public BankingCard(int cardNumber, Person owner, String pin, int accountNumber, String bankName) {
         this.cardNumber = cardNumber;
         this.owner = owner;
         this.pin = pin;
@@ -15,20 +15,20 @@ public class BankingCard {
         this.bankName = bankName;
     }
 
-    public boolean isCorrectPin (byte enteredPin) {
-        return enteredPin == pin;
+    public boolean isCorrectPin(String enteredPin) {
+        return enteredPin.equals(pin);
     }
 
-    public void changePin (byte oldPin, byte newPin) {
-        if (isCorrectPin(oldPin)) {
+    public void changePin(String oldPin, String newPin) {
+        if(isCorrectPin(oldPin)) {
             pin = newPin;
             System.out.println("Pin has been changed");
         } else {
-            System.out.println("Incorrect current PIN");
+            System.out.println("Incorrect current pin");
         }
     }
 
-    public int getAccountNumber () {
+    public int getAccountNumber() {
         return accountNumber;
     }
 

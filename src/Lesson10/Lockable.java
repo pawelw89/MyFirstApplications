@@ -1,7 +1,9 @@
 package Lesson10;
 
 public interface Lockable {
+    static final boolean LOCKED = false;
 
-    public void lock();
+    void lock();
 
+    void unlock();
 }

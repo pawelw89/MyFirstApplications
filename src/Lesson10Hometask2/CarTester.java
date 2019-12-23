@@ -15,6 +15,14 @@ public class CarTester {
         cars[2]=car3;
         cars[3]=car4;
 
+        for (Car car : cars) {
+            System.out.println(car.toString());
+            if (car instanceof Tankable) {
+
+            }
+        }
+
+
     }
 
 }

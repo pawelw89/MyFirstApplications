@@ -13,7 +13,7 @@ public class Adress implements Cloneable {
 
     @Override
     public String toString() {
-        return "Adress{" +
+        return "Address{" +
                 "city='" + city + '\'' +
                 ", street='" + street + '\'' +
                 ", building='" + building + '\'' +
