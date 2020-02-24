@@ -10,6 +10,10 @@
           <option name="url" value="https://github.com/pawelw89/IT-Academy.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="https://github.com/it-academy-pl/final-task.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
     <option name="cloneParentDir" value="C:\Users\Paweł\IdeaProjects" />
