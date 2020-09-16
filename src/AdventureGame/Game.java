@@ -1,5 +1,10 @@
 package AdventureGame;
 
+import AdventureGame.Enemies.Enemy;
+import AdventureGame.Enemies.Orc;
+import AdventureGame.Enemies.Skeleton;
+import AdventureGame.Enemies.Zombie;
+
 import java.util.Random;
 import java.util.Scanner;
 

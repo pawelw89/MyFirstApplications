@@ -1,4 +1,4 @@
-package AdventureGame;
+package AdventureGame.Enemies;
 
 public class Zombie extends Enemy {
 

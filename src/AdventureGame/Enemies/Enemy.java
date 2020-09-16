@@ -1,10 +1,10 @@
-package AdventureGame;
+package AdventureGame.Enemies;
 
 public class Enemy {
 
-    String name;
-    int health;
-    int damage;
+    public String name;
+    public int health;
+    public int damage;
 
     public Enemy(String name, int health, int damage) {
         this.name = name;
