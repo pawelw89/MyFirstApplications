@@ -3,7 +3,7 @@ package AdventureGame;
 import java.util.Random;
 import java.util.Scanner;
 
-public class MainApp {
+public class Game {
 
     public static void main(String[] args) {
 
@@ -27,7 +27,7 @@ public class MainApp {
             String enemyName = newEnemy.getName();
             System.out.println("\t# " + enemyName + " has appeared! #\n");
 
-            while (newEnemy.getHealth() > 0) {
+            while (newEnemy.health > 0) {
 
                 System.out.println("Your HP is " + player.getHealth() + " and damage " + player.getDamage());
                 System.out.println(enemyName + " HP is " + newEnemy.getHealth() + " and damage " + newEnemy.getDamage() + "\n");
@@ -43,20 +43,23 @@ public class MainApp {
                     System.out.println("\tFight!!");
                     System.out.println("You attacked for " + player.getDamage());
 
+                    if (newEnemy.getHealth() <= 0) {
+                        System.out.println("Enemy defeated!");
+                        System.out.println("You have " + player.getHealth() + " HP left");
+                        if (rand.nextInt(100) < player.getHealthPiotionDropRate()) {
+                            player.numberOfPotions++;
+                            System.out.println("The enemy dropped the potion \n You have " + player.getNumberOfPotions() + " potion(s) now");
+                        } else {
+                            System.out.println("Nothing have been found");
+                        } break;
+                    }
+
                     System.out.println("Enemy HP is " + newEnemy.getHealth() + " now");
 
                     player.setHealth(player.getHealth() - newEnemy.getDamage());
                     System.out.println("Enemy attacked for " + newEnemy.getDamage());
                     System.out.println("Your HP is " + player.getHealth() + " now \n");
 
-                    if (newEnemy.health <= 0) {
-                        System.out.println("Enemy defeated!");
-                        System.out.println("You have " + player.getHealth() + " HP left");
-                        if (rand.nextInt(100) < player.getHealthPiotionDropRate()) {
-                            player.numberOfPotions++;
-                            System.out.println("The enemy dropped the potion \n You have " + player.getNumberOfPotions() + " potion(s) now");
-                        }
-                    }
                     if (player.health <= 0) {
                         System.out.println("You are defeated!");
                         break GAME;
@@ -88,7 +91,7 @@ public class MainApp {
                 System.out.println("You continue your adventure");
             } else if (input2.equals("2")) {
                 System.out.println("You exit the dungeon");
-                break;
+                player.running = false;
             } else {
                 System.out.println("Invalid command!");
             }
