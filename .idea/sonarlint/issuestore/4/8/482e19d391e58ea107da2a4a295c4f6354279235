@@ -1,19 +1,19 @@
 
 V
-squid:S106+"9Replace this use of System.out or System.err by a logger.(‚¥ûô8ËØò‹È.
-[
-squid:S106!"9Replace this use of System.out or System.err by a logger.(¥½å©üÿÿÿÿ8‘©ôŠÈ.
-[
-squid:S106,"9Replace this use of System.out or System.err by a logger.(¼³‰×úÿÿÿÿ8ºúø‹È.
-wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÎøìÍøÿÿÿÿ
-V
 squid:S106%"9Replace this use of System.out or System.err by a logger.(ì¨‚ç8Îàå‹È.
-V
-squid:S106("9Replace this use of System.out or System.err by a logger.(ñçòÈ8Îàå‹È.
 ssquid:S1192"PDefine a constant instead of duplicating this literal "SMS has earned " 3 times.(¥½å©üÿÿÿÿ8‘©ôŠÈ.
 V
-squid:S106#"9Replace this use of System.out or System.err by a logger.(Üÿ–œ8èëöŠÈ.
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(¥½å©üÿÿÿÿ8³ŒéŠÈ.
+squid:S106+"9Replace this use of System.out or System.err by a logger.(‚¥ûô8ËØò‹È.
 [
 squid:S106"9Replace this use of System.out or System.err by a logger.(¥½å©üÿÿÿÿ8õ÷×ŠÈ.
+[
+squid:S106"9Replace this use of System.out or System.err by a logger.(¥½å©üÿÿÿÿ8³ŒéŠÈ.
+V
+squid:S106("9Replace this use of System.out or System.err by a logger.(ñçòÈ8Îàå‹È.
+[
+squid:S106,"9Replace this use of System.out or System.err by a logger.(¼³‰×úÿÿÿÿ8ºúø‹È.
+[
+squid:S106!"9Replace this use of System.out or System.err by a logger.(¥½å©üÿÿÿÿ8‘©ôŠÈ.
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÎøìÍøÿÿÿÿ
+V
+squid:S106#"9Replace this use of System.out or System.err by a logger.(Üÿ–œ8èëöŠÈ.
