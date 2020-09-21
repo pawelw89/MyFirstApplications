@@ -29,7 +29,7 @@ public class Transaction {
         if(amount>=0){
             return String.format("%s : $%.02f : %s", this.timestamp.toString(), this.amount, this.memo);
         } else {
-            return String.format("%s : $(%.02f) : %s", this.timestamp.toString(), this.amount, this.memo);
+            return String.format("%s : $(%.02f) : %s", this.timestamp.toString(), -this.amount, this.memo);
         }
     }
 }
